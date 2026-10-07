@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mechcalc-mcp"
+version = "0.1.0"
+description = "MCP server of deterministic engineering checks for robots and 3D-printed hardware: arm torque, leadscrews, gears, tip-over, power budgets, print tolerances, beam/column/bolt."
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.10"
+dependencies = ["mcp>=2.3,<3"]
+keywords = ["mcp", "robotics", "3d-printing", "mechanical-engineering", "cad", "lerobot"]
+
+[project.optional-dependencies]
+plots = ["numpy", "matplotlib"]
+test = ["pytest"]
+
+[project.scripts]
+mechcalc-mcp = "mechcalc.server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["mechcalc"]
