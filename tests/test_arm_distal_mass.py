@@ -1,7 +1,7 @@
 """The arm engine counted every motor in total mass and none of them in the shoulder torque, the tip
 deflection or the root stress. A servo hung 280 mm out on a wrist loaded the shoulder for free, so the
 engine passed an actuator that a hand moment balance showed could not hold the arm out."""
-from mechcalc.engines import _common, arm
+from mechcalc_mcp.engines import _common, arm
 
 G = _common.G
 BASE = {"payload_g": 0.0, "link1_mm": 150.0, "link2_mm": 150.0, "motor_mass_g": 60.0}

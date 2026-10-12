@@ -7,7 +7,7 @@ from __future__ import annotations
 
 import pytest
 
-from mechcalc import dfm
+from mechcalc_mcp import dfm
 
 
 def test_a_hole_is_modelled_oversize_so_the_printed_one_is_nominal():
@@ -94,7 +94,7 @@ def test_the_checklist_names_inserts_for_screws_into_plastic():
 def test_every_measured_bore_is_kept_not_just_the_last(tmp_path, monkeypatch):
     """One bore is one number with no way to know if it is representative. A set across diameters
     shows whether the shrink is a constant, which decides whether one compensation fits every hole."""
-    from mechcalc import calibrate
+    from mechcalc_mcp import calibrate
     monkeypatch.setattr(calibrate, "STORE", tmp_path / "cal.json")
     calibrate.record_hole("pla", 3.6, 3.42)
     calibrate.record_hole("pla", 8.2, 8.05)
@@ -111,7 +111,7 @@ def test_every_measured_bore_is_kept_not_just_the_last(tmp_path, monkeypatch):
 
 
 def test_points_that_disagree_say_so_instead_of_averaging_it_away(tmp_path, monkeypatch):
-    from mechcalc import calibrate
+    from mechcalc_mcp import calibrate
     monkeypatch.setattr(calibrate, "STORE", tmp_path / "cal.json")
     calibrate.record_hole("pla", 3.6, 3.55)      # 0.05
     rec = calibrate.record_hole("pla", 8.2, 7.80)  # 0.40 — nothing like the first

@@ -8,7 +8,7 @@ machine: three instances of one absent check.
 """
 from __future__ import annotations
 
-from mechcalc import power
+from mechcalc_mcp import power
 
 
 def test_the_contradiction_this_module_was_written_for():

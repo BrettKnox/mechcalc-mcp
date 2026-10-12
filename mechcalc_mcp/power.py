@@ -25,7 +25,7 @@ from __future__ import annotations
 import logging
 import re
 
-log = logging.getLogger("mechcalc.power")
+log = logging.getLogger("mechcalc_mcp.power")
 
 # `12V`, `12 V`, `24VDC`, `3.3v`. Deliberately strict: a bare "12" in a part number is not a voltage,
 # and reading one out of "MTS-101" would be inventing data rather than finding it.

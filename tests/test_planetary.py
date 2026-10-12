@@ -6,7 +6,7 @@ three planets — meshes perfectly and cannot be assembled.
 """
 from __future__ import annotations
 
-from mechcalc import planetary
+from mechcalc_mcp import planetary
 
 
 def test_the_combination_that_meshes_and_still_cannot_be_built():

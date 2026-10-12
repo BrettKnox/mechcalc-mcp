@@ -24,7 +24,7 @@ and it is dominated by the outer fibres, which on a printed part are the perimet
 arguably the number you want for a printed part, but it is not the same quantity a datasheet lists,
 which is why the derived `source` string says so instead of pretending.
 
-Run it: python -m mechcalc.calibrate
+Run it: python -m mechcalc_mcp.calibrate
 """
 from __future__ import annotations
 

@@ -17,7 +17,7 @@ plots = ["numpy", "matplotlib"]
 test = ["pytest"]
 
 [project.scripts]
-mechcalc-mcp = "mechcalc.server:main"
+mechcalc-mcp = "mechcalc_mcp.server:main"
 
 [tool.hatch.build.targets.wheel]
-packages = ["mechcalc"]
+packages = ["mechcalc_mcp"]

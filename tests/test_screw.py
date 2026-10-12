@@ -15,7 +15,7 @@ import math
 
 import pytest
 
-from mechcalc import screw
+from mechcalc_mcp import screw
 
 GREASED = "steel_brass_greased"
 

@@ -17,7 +17,7 @@ import math
 
 import pytest
 
-from mechcalc import mechanism as M
+from mechcalc_mcp import mechanism as M
 
 ARM = dict(wheelbase_mm=220, cog_height_mm=55, base_kg=2.6, arm_kg=1.23,
            payload_kg=0.5, reach_mm=320)

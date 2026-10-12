@@ -2,8 +2,8 @@
 import asyncio
 import json
 
-from mechcalc.engines import ENGINES
-from mechcalc.server import mcp
+from mechcalc_mcp.engines import ENGINES
+from mechcalc_mcp.server import mcp
 
 CALLS = {
     "materials_list": {},
